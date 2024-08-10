@@ -1,4 +1,5 @@
 import 'dotenv/config'
+import { app } from './app.js';
 
 import mongoose from "mongoose";
 import express from "express";
@@ -15,5 +16,4 @@ connectDB()
     
 })
 
-const app = express();
 
