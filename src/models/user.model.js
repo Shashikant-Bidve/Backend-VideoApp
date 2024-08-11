@@ -55,6 +55,8 @@ userSchema.pre("save", async function (next) {
     next()
 })
 
+// these methods are with instances of User and not User itself
+
 userSchema.methods.isPasswordCorrect = async function(password){
     return await bcrypt.compare(password, this.password)
 }
